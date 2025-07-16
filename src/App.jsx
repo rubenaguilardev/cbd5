@@ -77,7 +77,7 @@ const App = () => {
       <div className='w-full overflow-x-hidden'>
         <main className='container zIndex-10 mx-auto flex flex-col items-center px-3 pb-3 text-center'>
           <section className='flex flex-col items-center justify-center h-[100vh] px'>
-            <h1 className='text-5xl mb-5'>Today is <span className="text-[#ffbcff]"> Coope's </span> Birthday! 🎂
+            <h1 className='text-[2.8rem] mb-5'>Today is <span className="text-[#ffbcff]"> Coope's </span> Birthday! 🎂
             </h1>
             <img 
               className='w-[260px] border-5 border-[rgb(84,33,126)] rounded-[50%] mb-8 shadow-2xl' 
