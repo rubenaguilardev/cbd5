@@ -45,7 +45,7 @@ const App = () => {
     },
     {
       id: 5,
-      text: "HAPPY BIRTHDAY COOPER LUNA!"
+      text: "HAPPY BIRTHDAY COOPER LUNA! 💝"
     }
   ]
 
@@ -84,7 +84,7 @@ const App = () => {
           <h1 className='text-5xl mb-5'>Today is <span className="text-[#ffbcff]"> Coope's </span> Birthday! 🎂
           </h1>
           <img 
-            className='w-[320px] border-5 border-[rgb(84,33,126)] rounded-[50%] mb-8 shadow-2xl' 
+            className='w-[280px] border-5 border-[rgb(84,33,126)] rounded-[50%] mb-8 shadow-2xl' 
             src={coope} 
             alt="Picture of Cooper"
           />
