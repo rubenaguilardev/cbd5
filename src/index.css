@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap');
+@import "tailwindcss";
+
+body {
+  font-family: 'Mouse Memoirs', 'sans-serif';
+  background: radial-gradient(circle, rgba(255, 122, 184, 1) 0%, rgba(140, 102, 255, 1) 100%);
+  color: white;
+  text-shadow: 1px 1px purple;
+}
