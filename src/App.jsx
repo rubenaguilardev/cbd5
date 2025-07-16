@@ -58,7 +58,7 @@ const App = () => {
   const giftText = gifts.map(gift => {
     return (
     <section 
-      className='flex flex-col items-center p-3 mt-10'
+      className='container flex flex-col items-center p-3 mt-10'
       key={gift.id}
     >
       
