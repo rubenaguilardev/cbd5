@@ -40,7 +40,7 @@ const App = () => {
     },
     {
       id: 4,
-      text: "🤩 No one is as amazing as you except... "
+      text: "🤩 You are as amazing as... "
     },
     {
       id: 5,
