@@ -17,7 +17,7 @@ body {
 .gift1:hover {
   background-image: url('assets/excited.gif');
   background-size: cover;
-  
+  background-position: center;
 }
 
 .gift2 {
@@ -26,7 +26,7 @@ body {
 }
 
 .gift2:hover {
-   background-image: url('assets/happy.gif');
+   background-image: url('assets/.gif');
    background-size: cover;
    background-position: bottom;
 }
@@ -37,7 +37,7 @@ body {
 }
 
 .gift3:hover {
-   background-image: url('assets/amazing.gif');
+   background-image: url('assets/happy.gif');
    background-size: cover;
    background-position: bottom;
 }

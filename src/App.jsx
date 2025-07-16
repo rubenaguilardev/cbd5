@@ -31,15 +31,16 @@ const App = () => {
     },
     {
       id: 2,
-      text: "How Abuela reacts when you enter the room ❤️",
+      text: "🤗 If I had to describe you, I'd say you're ",
+      
     },
     {
       id: 3,
-      text: "If I had to describe you with ONE word 🤗"
+      text: "How Abuela reacts when you enter the room ❤️",
     },
     {
       id: 4,
-      text: "No one is as amazing as you except 🤩"
+      text: "🤩 No one is as amazing as you except "
     },
     {
       id: 5,
