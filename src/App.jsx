@@ -80,7 +80,7 @@ const App = () => {
     <>
       
       <main className='container mx-auto flex flex-col items-center justify-center px-3 pb-3 text-center'>
-        <section className='flex flex-col items-center justify-center h-[100vh]'>
+        <section className='flex flex-col items-center justify-center h-full'>
           <h1 className='text-5xl mb-5'>Today is <span className="text-[#ffbcff]"> Coope's </span> Birthday! 🎂
           </h1>
           <img 
