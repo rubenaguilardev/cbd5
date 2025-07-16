@@ -10,7 +10,7 @@ body {
 }
 
 .gift1 {
-  background-image: url('assets/giftWhitePink.png');
+  background-image: url('assets/giftPink.png');
   background-size: cover;
  background-position: 0cap;
 }
@@ -20,7 +20,7 @@ body {
 }
 
 .gift2 {
-  background-image: url('assets/giftPurple.png');
+  background-image: url('assets/giftWhitePurple.png');
   background-size: cover;
 }
 
@@ -31,18 +31,18 @@ body {
 }
 
 .gift3 {
-  background-image: url('assets/giftPink.png');
+  background-image: url('assets/giftWhitePink.png');
   background-size: cover;
 }
 
 .gift3:hover {
-   background-image: url('assets/happy.gif');
+   background-image: url('assets/amazing.gif');
    background-size: cover;
    background-position: bottom;
 }
 
 .gift4 {
-  background-image: url('assets/giftWhitePurple.png');
+  background-image: url('assets/giftPurple.png');
 }
 
 .gift4:hover {

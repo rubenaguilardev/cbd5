@@ -18,8 +18,6 @@ const App = () => {
   useEffect(() => {
     if (isPlaying) {
       audioRef.current.play()
-      {<Confetti/>}
-
     } else {
       audioRef.current.currentTime = 0
     }
@@ -47,25 +45,18 @@ const App = () => {
       id: 5,
       text: "HAPPY BIRTHDAY COOPER LUNA! 💝"
     }
-  ]
-
-  const handlePress = () => {
-    setImage(gifts[0].surprise)
-  }
-
-  
+  ] 
 
   const giftText = gifts.map(gift => {
     return (
     <section 
-      className='container flex flex-col items-center p-3 mt-10'
+      className='container flex flex-col items-center p-3 mt-5'
       key={gift.id}
     >
       
         <h3 className='text-4xl mb-5'>{gift.text}</h3>
         <div
-          onClick={handlePress} 
-          className={`gift${gift.id} h-[400px] w-[400px] mb-12 bg-cover rounded-xl shadow-2xl cursor-pointer`}
+          className={`gift${gift.id} w-full max-w-[400px] h-[400px] mb-12 bg-cover rounded-xl shadow-2xl cursor-pointer`}
           
         ></div>
     </section>
@@ -73,37 +64,43 @@ const App = () => {
 })
 
   const toggleAudio = () => {
-    setIsPlaying(!isPlaying)
+    if (!isPlaying) {
+      setIsPlaying(true)
+    }
+    
   }
 
   return (
     <>
-      
-      <main className='container mx-auto flex flex-col items-center justify-center px-3 pb-3 text-center'>
-        <section className='flex flex-col items-center justify-center h-[100vh] p-3'>
-          <h1 className='text-5xl mb-5'>Today is <span className="text-[#ffbcff]"> Coope's </span> Birthday! 🎂
-          </h1>
-          <img 
-            className='w-[260px] border-5 border-[rgb(84,33,126)] rounded-[50%] mb-8 shadow-2xl' 
-            src={coope} 
-            alt="Picture of Cooper"
-          />
-          <div>
-            <h2 className='text-4xl mb-3'>5 years old</h2>
-            <span className="text-3xl">July 25, 2025</span>
-          </div>
-          <button
-            onClick={
-              () => { 
-              setValue(value + 1)
-              toggleAudio()
-            }}
-            className='w-full mt-8 py-5 bg-[rgb(84,33,126)] rounded-xl cursor-pointer text-3xl shadow-2x'>
-              PRESS HERE FOR A SURPRISE 🎁
-          </button>
-        </section>
-        {giftText}
-      </main>
+      {isPlaying && <Confetti width={width} height={height}
+      style={{ position: 'fixed', zIndex: 0, top: 0, left: 0, width: '100%', pointerEvents: 'none', overflow: 'hidden' }}/>}
+      <div className='w-full overflow-x-hidden'>
+        <main className='container zIndex-10 mx-auto flex flex-col items-center justify-center px-3 pb-3 text-center overflow-x-hidden'>
+          <section className='flex flex-col items-center justify-center h-[100vh] p-3'>
+            <h1 className='text-5xl mb-5'>Today is <span className="text-[#ffbcff]"> Coope's </span> Birthday! 🎂
+            </h1>
+            <img 
+              className='w-[260px] border-5 border-[rgb(84,33,126)] rounded-[50%] mb-8 shadow-2xl' 
+              src={coope} 
+              alt="Picture of Cooper"
+            />
+            <div>
+              <h2 className='text-4xl mb-3'>5 years old</h2>
+              <span className="text-3xl">July 25, 2025</span>
+            </div>
+            <button
+              onClick={
+                () => { 
+                setValue(value + 1)
+                toggleAudio()
+              }}
+              className='w-full mt-8 py-5 bg-[rgb(84,33,126)] rounded-xl cursor-pointer text-3xl shadow-2x'>
+                PRESS HERE FOR A SURPRISE 🎁
+            </button>
+          </section>
+          {giftText}
+        </main>
+      </div>
     </>
   )
 }
