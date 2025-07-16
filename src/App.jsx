@@ -50,7 +50,7 @@ const App = () => {
   const giftText = gifts.map(gift => {
     return (
     <section 
-      className='container flex flex-col items-center p-3 mt-5'
+      className='container flex flex-col items-center mt-5'
       key={gift.id}
     >
       
@@ -73,7 +73,7 @@ const App = () => {
   return (
     <>
       {isPlaying && <Confetti width={width} height={height}
-      style={{ position: 'fixed', zIndex: 0, top: 0, left: 0, width: '100%', pointerEvents: 'none', overflow: 'hidden' }}/>}
+      style={{  zIndex: 0, width: '100%', pointerEvents: 'none', overflow: 'hidden' }}/>}
       <div className='w-full overflow-x-hidden'>
         <main className='container zIndex-10 mx-auto flex flex-col items-center justify-center px-3 pb-3 text-center overflow-x-hidden'>
           <section className='flex flex-col items-center justify-center h-[100vh] p-3'>
