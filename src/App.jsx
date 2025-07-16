@@ -58,7 +58,7 @@ const App = () => {
   const giftText = gifts.map(gift => {
     return (
     <section 
-      className='flex flex-col items-center'
+      className='flex flex-col items-center p-3 mt-10'
       key={gift.id}
     >
       
@@ -80,11 +80,11 @@ const App = () => {
     <>
       
       <main className='container mx-auto flex flex-col items-center justify-center px-3 pb-3 text-center'>
-        <section className='flex flex-col items-center justify-center h-full'>
+        <section className='flex flex-col items-center justify-center h-[100vh] p-3'>
           <h1 className='text-5xl mb-5'>Today is <span className="text-[#ffbcff]"> Coope's </span> Birthday! 🎂
           </h1>
           <img 
-            className='w-[340px] border-5 border-[rgb(84,33,126)] rounded-[50%] mb-8 shadow-2xl' 
+            className='w-[320px] border-5 border-[rgb(84,33,126)] rounded-[50%] mb-8 shadow-2xl' 
             src={coope} 
             alt="Picture of Cooper"
           />
@@ -102,12 +102,7 @@ const App = () => {
               PRESS HERE FOR A SURPRISE 🎁
           </button>
         </section>
-        
         {giftText}
-        <div className="">
-            
-            <div className=''></div>
-        </div>
       </main>
     </>
   )
