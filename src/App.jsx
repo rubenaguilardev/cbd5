@@ -31,7 +31,7 @@ const App = () => {
     },
     {
       id: 2,
-      text: "🤗 If I had to describe you, I'd say you're ",
+      text: "🤗 If I had to describe you, I'd say... ",
       
     },
     {
@@ -40,7 +40,7 @@ const App = () => {
     },
     {
       id: 4,
-      text: "🤩 No one is as amazing as you except "
+      text: "🤩 No one is as amazing as you except... "
     },
     {
       id: 5,

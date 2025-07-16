@@ -26,9 +26,9 @@ body {
 }
 
 .gift2:hover {
-   background-image: url('assets/.gif');
+   background-image: url('assets/incredible.gif');
    background-size: cover;
-   background-position: bottom;
+   background-position: center;
 }
 
 .gift3 {
