@@ -76,11 +76,11 @@ const App = () => {
       style={{  zIndex: 0, width: '100%', pointerEvents: 'none', overflow: 'hidden' }}/>}
       <div className='w-full overflow-x-hidden'>
         <main className='container zIndex-10 mx-auto flex flex-col items-center px-3 pb-3 text-center'>
-          <section className='flex flex-col items-center justify-center h-[100vh] px'>
-            <h1 className='text-[2.8rem] mb-5'>Today is <span className="text-[#ffbcff]"> Coope's </span> Birthday! 🎂
+          <section className='flex flex-col items-center justify-center h-[100vh]'>
+            <h1 className='text-5xl mb-5'>Today is <span className="text-[#ffbcff]"> Coope's </span> Birthday! 🎂
             </h1>
             <img 
-              className='w-[240px] border-5 border-[rgb(84,33,126)] rounded-[50%] mb-8 shadow-2xl' 
+              className='w-[240px] md:w-[320px] border-5 border-[rgb(84,33,126)] rounded-[50%] mb-8 shadow-2xl' 
               src={coope} 
               alt="Picture of Cooper"
             />
@@ -94,7 +94,7 @@ const App = () => {
                 setValue(value + 1)
                 toggleAudio()
               }}
-              className='w-full mt-8 py-5 bg-[rgb(84,33,126)] rounded-xl cursor-pointer text-3xl shadow-2x'>
+              className='w-full mt-5 py-5 bg-[rgb(84,33,126)] rounded-xl cursor-pointer text-3xl shadow-2x'>
                 PRESS HERE FOR A SURPRISE 🎁
             </button>
           </section>
