@@ -76,7 +76,7 @@ const App = () => {
       {isPlaying && <Confetti width={width} height={height}
       style={{  zIndex: 0, width: '100%', pointerEvents: 'none', overflow: 'hidden' }}/>}
       <div className='w-full overflow-x-hidden'>
-        <main className='container zIndex-10 mx-auto flex flex-col items-center px-3 pb-3 text-center'>
+        <main className='container inset-0 zIndex-10 mx-auto flex flex-col items-center px-3 pb-3 text-center'>
           <section className='flex flex-col items-center justify-center h-[100vh]'>
             <h1 className='text-5xl mb-5'>Today is <span className="text-[#ffbcff]"> Coope's </span> Birthday! 🎂
             </h1>
